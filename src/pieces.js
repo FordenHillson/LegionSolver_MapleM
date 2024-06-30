@@ -15,13 +15,13 @@ const defaultPieces = [
         [2, 2]
     ],
 
-    // Lvl 140 Warrior/Pirate
+    // Lvl 150 Warrior/Pirate
     [
-        [1, 0],
-        [2, 1]
+        [1, 2],
+        [2, 0]
     ],
 
-    // Lvl 140 Mage/Thief/Archer
+    // Lvl 150 Mage/Thief/Archer
     [
         [1, 2, 1]
     ],
@@ -191,8 +191,8 @@ for (let i = 0; i < pieces.length; i++) {
 
 document.getElementById('pieceDescription1').textContent = i18n('lvl60');
 document.getElementById('pieceDescription2').textContent = i18n('lvl100');
-document.getElementById('pieceDescription3').textContent = i18n('warriorPirate140');
-document.getElementById('pieceDescription4').textContent = i18n('mageThiefArcher140');
+document.getElementById('pieceDescription3').textContent = i18n('warriorPirate150');
+document.getElementById('pieceDescription4').textContent = i18n('mageThiefArcher150');
 document.getElementById('pieceDescription5').textContent = i18n('warrior200');
 document.getElementById('pieceDescription6').textContent = i18n('archer200');
 document.getElementById('pieceDescription7').textContent = i18n('thiefLab200');
@@ -204,13 +204,6 @@ document.getElementById('pieceDescription12').textContent = i18n('thief250');
 document.getElementById('pieceDescription13').textContent = i18n('mage250');
 document.getElementById('pieceDescription14').textContent = i18n('pirate250');
 document.getElementById('pieceDescription15').textContent = i18n('xenon250');
-document.getElementById('pieceDescription16').textContent = i18n('abyssalExpedition');
-
-if (hasLabPieces()) {
-    document.getElementById('pieceDescription17').textContent = i18n('enhancedLab200');
-    document.getElementById('pieceDescription18').textContent = i18n('enhancedLab250');
-    document.getElementById('pieceDescription19').textContent = i18n('lab250');
-}
 
 let currentPieces = 0;
 let currentUseCaracterCount = 0;
